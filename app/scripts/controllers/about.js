@@ -1,13 +1,6 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name newAngularBoilerplateApp.controller:AboutCtrl
- * @description
- * # AboutCtrl
- * Controller of the newAngularBoilerplateApp
- */
-angular.module('newAngularBoilerplateApp')
+angular.module('mytodoApp')
   .controller('AboutCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

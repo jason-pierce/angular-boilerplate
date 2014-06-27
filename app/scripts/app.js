@@ -9,23 +9,28 @@
  * Main module of the application.
  */
 angular
-  .module('newAngularBoilerplateApp', [
+  .module('mytodoApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.sortable'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
+        templateUrl: 'views/home.html',
         controller: 'MainCtrl'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
+      })
+      .when('/app', {
+        templateUrl: 'views/app.html',
+        controller: 'ListCtrl'
       })
       .otherwise({
         redirectTo: '/'

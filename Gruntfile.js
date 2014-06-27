@@ -68,7 +68,7 @@ module.exports = function (grunt) {
     'cdnify',
     'cssmin',
     'uglify',
-    'filerev',
+    'rev',
     'usemin',
     'htmlmin'
   ]);
